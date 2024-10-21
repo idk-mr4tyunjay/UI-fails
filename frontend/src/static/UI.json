@@ -1,0 +1,17 @@
+[
+    {
+      "id": 1,
+      "title": "Popup Hell",
+      "description": "Too many popups on one page. Navigating through this nightmare.",
+      "route": "/ui/popuphell",
+      "imageUrl": "src/assets/popup.png"
+    },
+    {
+      "id": 2,
+      "title": "Contact us",
+      "description": "Too many cursors on one page. Navigating through this nightmare.",
+      "route": "/ui/contactus",
+      "imageUrl": "src/assets/contact.png"
+    }
+  ]
+  
