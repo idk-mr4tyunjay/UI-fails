@@ -3,25 +3,24 @@ import UI from "../static/UI.json";
 import { Link } from "react-router-dom";
 
 const Card: React.FC = () => {
-  const [previewContent, setPreviewContent] = useState<JSX.Element | null>(
-    null
-  );
+  // const [previewContent, setPreviewContent] = useState<JSX.Element | null>(
+  //   null
+  // );
   const [likes, setLikes] = useState<number[]>(new Array(UI.length).fill(0));
   const [dislikes, setDislikes] = useState<number[]>(
     new Array(UI.length).fill(0)
   );
 
-  const handleMouseEnter = (route: string) => {
-    // Dynamically import the component based on the route
-    import(`../pages${route}.tsx`).then((module) => {
-      const Component = module.default;
-      setPreviewContent(<Component />);
-    });
-  };
+  // const handleMouseEnter = (route: string) => {
+  //   import(`../pages${route}.tsx`).then((module) => {
+  //     const Component = module.default;
+  //     setPreviewContent(<Component />);
+  //   });
+  // };
 
-  const handleMouseLeave = () => {
-    setPreviewContent(null);
-  };
+  // const handleMouseLeave = () => {
+  //   setPreviewContent(null);
+  // };
 
   const handleLike = (index: number) => {
     const newLikes = [...likes];
@@ -42,8 +41,8 @@ const Card: React.FC = () => {
           <div
             key={ui.id}
             className="bg-white rounded-lg shadow-lg overflow-hidden relative"
-            onMouseEnter={() => handleMouseEnter(ui.route)}
-            onMouseLeave={handleMouseLeave}
+            // onMouseEnter={() => handleMouseEnter(ui.route)}
+            // onMouseLeave={handleMouseLeave}
           >
             <img
               className="w-full h-48 object-cover"

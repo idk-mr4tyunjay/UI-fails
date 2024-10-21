@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Ensure correct imports
+import { BrowserRouter as Routes, Route } from 'react-router-dom'; // Ensure correct imports
 import Home from '../pages/Home'; // Import Home properly as a component
 import PopupHell from '../pages/UI/PopupHell';
 import ContactUs from '../pages/UI/ContactUs';
